@@ -9,9 +9,8 @@ import Card from './Card.svelte';
 const Context = createContext('');
 const SvelteComponent = SvelteWrapper(Card, Context);
 
-let id = Math.random();
 function App() {
-  id++;
+  const id = Math.random();
   const [count, setCount] = useState(0);
   const [valueFromInterval, setValueFromInterval] = useState(0);
   const [card] = useState({title: 'Svelte component', content: 'Card created by React'});
