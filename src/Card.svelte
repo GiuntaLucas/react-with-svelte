@@ -1,12 +1,15 @@
 <script>
   export let card;
   export let count;
+  export let valueFromInterval;
+
+  const id = Math.random();
 </script>
 
 <div class="card">
   <div class="card-title">{card.title}</div>
   <div class="card-content">{card.content}</div>
-  <div class="card-action">Svelte count: {count}</div>
+  <div class="card-action">Svelte prop count: {count} <br> Svelte prop setInterval: {valueFromInterval} <br> Svelte id: {id}</div>
 </div>
 
 <style>
